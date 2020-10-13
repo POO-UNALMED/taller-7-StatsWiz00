@@ -22,10 +22,6 @@ public class Alfabeto extends Pictograma{
 
     @Override
     public String toString() {
-        String letricas = "";
-        for (String letra: letras){
-            letricas.concat(letra + ", ");
-        }
-        return letricas.substring(0, letricas.length() -2);
+        return String.join(", ", letras);
     }
 }

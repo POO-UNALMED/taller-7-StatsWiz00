@@ -56,11 +56,11 @@ public class Libro extends Escrito {
 
     @Override
     public String toString() {
-        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() +"\n" + co_autor + "\n" + editorial + "\n" + edicion + "\n";
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() +"\n" + co_autor + "\n" + editorial + "\n" + edicion;
     }
 
     @Override
-    int palabrasTotales(int palabrasPagina) {
-        return getPaginas() * 2;
+    public int palabrasTotales(int palabrasPagina) {
+        return getPaginas() * 2 * palabrasPagina;
     }
 }
